@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piqueteadero Javi — Carta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grain"></div>
+<div class="wrap">
+
+  <header>
+    <img class="brand-logo" src="images/logo.png" alt="Piqueteadero Javi">
+  </header>
+
+  <div class="search-box">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="7"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+    <input id="searchInput" type="text" placeholder="Buscar en la carta…" autocomplete="off">
+  </div>
+
+  <nav class="cat-nav" id="catNav">
+    <button class="cat-pill active" data-target="cat-antojo">Para calmar el antojo</button>
+    <button class="cat-pill" data-target="cat-fuertes">Platos Fuertes</button>
+  </nav>
+
+  <section class="category" id="cat-antojo" data-category="Para calmar el antojo">
+    <div class="section-head">
+      <div class="section-title">Para calmar el antojo</div>
+      <div class="section-rule"></div>
+    </div>
+
+    <article class="card" data-name="arepa de puro choclo arepa dulce de maíz tierno con queso dorada al horno">
+      <div class="card-img"><img src="images/arepa.jpg" alt="Arepa de Puro Choclo"></div>
+      <div class="card-body">
+        <div class="card-name">Arepa de Puro Choclo</div>
+        <div class="card-desc">Arepa dulce de maíz tierno con queso, dorada al horno.</div>
+        <div class="card-footer">
+          <span class="serving-tag">Unidad</span>
+          <span class="price">$8.000</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-name="focaccia de la casa pan italiano al horno con aceite de oliva romero y sal gruesa">
+      <div class="card-img"><img src="images/focaccia.jpg" alt="Focaccia de la casa"></div>
+      <div class="card-body">
+        <div class="card-name">Focaccia de la casa</div>
+        <div class="card-desc">Pan italiano al horno, con aceite de oliva, romero y sal gruesa.</div>
+        <div class="card-footer">
+          <span class="serving-tag">Porción</span>
+          <span class="price">$10.000</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-name="chorizo chorizo santarrosano a la brasa papa y arepa asada clásico paisa">
+      <div class="card-img"><img src="images/chorizo.jpg" alt="Chorizo"></div>
+      <div class="card-body">
+        <div class="card-name">Chorizo</div>
+        <div class="card-desc">Chorizo santarrosano a la brasa, papa y arepa asada. Clásico paisa.</div>
+        <div class="card-footer">
+          <span class="serving-tag">Plato</span>
+          <span class="price">$10.000</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-name="helado al horno la magia del frío y el calor helado cubierto con merengue tostado al horno sorpresa garantizada">
+      <div class="card-img"><img src="images/helado.jpg" alt="Helado al Horno"></div>
+      <div class="card-body">
+        <div class="card-name">Helado al Horno</div>
+        <div class="card-desc">La magia del frío y el calor: helado cubierto con merengue tostado al horno. Sorpresa garantizada.</div>
+        <div class="card-footer">
+          <span class="serving-tag">Plato</span>
+          <span class="price">$10.000</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section class="category" id="cat-fuertes" data-category="Platos Fuertes">
+    <div class="section-head">
+      <div class="section-title">Platos Fuertes</div>
+      <div class="section-rule"></div>
+    </div>
+
+    <article class="card" data-name="choripán pan artesanal con chorizo jugoso chimichurri y topping de cebolla caramelizada">
+      <div class="card-img"><img src="images/choripan.jpg" alt="Choripán"></div>
+      <div class="card-body">
+        <div class="card-name">Choripán</div>
+        <div class="card-desc">Pan artesanal con chorizo jugoso, chimichurri y topping de cebolla caramelizada.</div>
+        <div class="card-footer">
+          <span class="serving-tag">Unidad</span>
+          <span class="price">$14.000</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-name="pastel de choclo tradicional pastel de maíz con relleno jugoso costra dorada al horno">
+      <div class="card-img"><img src="images/pastel.jpg" alt="Pastel de Choclo"></div>
+      <div class="card-body">
+        <div class="card-name">Pastel de Choclo</div>
+        <div class="card-desc">Tradicional pastel de maíz con relleno jugoso, costra dorada al horno.</div>
+        <div class="card-footer">
+          <span class="serving-tag">Porción</span>
+          <span class="price">$15.000</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-name="pizza clasica versión vegetariana masa artesanal carne adobada en casa queso derretido y pesto todo al horno de leña masa artesanal vegetales frescos queso derretido y pesto misma magia sin carne">
+      <div class="card-img"><img src="images/pizza.jpg" alt="Pizza Clasica"></div>
+      <div class="card-body">
+        <div class="card-name">Pizza Clasica</div>
+        <div class="card-desc">Masa artesanal, carne adobada en casa, queso derretido y pesto. Todo al horno de leña.</div>
+        <div class="card-name secondary">Versión Vegetariana</div>
+        <div class="card-desc">Masa artesanal, vegetales frescos, queso derretido y pesto. Misma magia, sin carne.</div>
+        <div class="card-footer combo-footer">
+          <span class="serving-tag">Unidad</span>
+          <span class="price">$30.000</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <div class="empty-state" id="emptyState" style="display:none;">
+    <div class="emoji">🔥</div>
+    <div>No encontramos nada con ese antojo.<br>Prueba con otra palabra.</div>
+  </div>
+
+  <footer class="made">Piqueteadero Javi</footer>
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="modal-img"><img id="modalImg" src="" alt=""></div>
+    <div class="modal-content">
+      <div class="modal-dishes" id="modalDishes"></div>
+      <div class="modal-footer">
+        <span class="serving-tag" id="modalServing"></span>
+        <span class="price" id="modalPrice"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
